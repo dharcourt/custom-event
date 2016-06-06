@@ -6,9 +6,17 @@ exports.Inside = Component.specialize(/** @lends Inside# */ {
         value: function Inside() {}
     },
 
-    handleInputEventButtonAction: {
+    handleInputEvent1ButtonAction: {
         value: function (event) {
-            var detail = {message: "Hi from handleInputEventButtonAction()"};
+            var detail = {message: "Hi from handleInputEvent1ButtonAction()"};
+            console.log("Dispatching \"input\" event with detail: ", detail);
+            this.dispatchEventNamed("input", true, true, detail);
+        }
+    },
+
+    handleInputEvent2ButtonAction: {
+        value: function (event) {
+            var detail = {message: "Hi from handleInputEvent2ButtonAction()"};
             console.log("Dispatching \"input\" event with detail: ", detail);
             this.dispatchEventNamed("input", true, true, detail);
         }
