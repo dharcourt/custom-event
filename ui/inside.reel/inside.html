@@ -16,10 +16,17 @@
                 }
             ]
         },
-        "inputEventButton": {
+        "inputEvent1Button": {
             "prototype": "montage/ui/button.reel",
             "properties": {
-                "element": {"#": "inputEventButton"},
+                "element": {"#": "inputEvent1Button"},
+                "label": "Generate \"input\" Event"
+            }
+        },
+        "inputEvent2Button": {
+            "prototype": "montage/ui/button.reel",
+            "properties": {
+                "element": {"#": "inputEvent2Button"},
                 "label": "Generate \"input\" Event"
             }
         },
@@ -42,7 +49,8 @@
 </head>
 <body>
     <div data-montage-id="owner" class="Inside">
-        <button data-montage-id="inputEventButton"></button>
+        <button data-montage-id="inputEvent1Button"></button>
+        <button data-montage-id="inputEvent2Button"></button>
         <button data-montage-id="notInputEvent1Button"></button>
         <button data-montage-id="notInputEvent2Button"></button>
     </div>
