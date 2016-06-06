@@ -15,23 +15,33 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         }
     },
 
-    handleAction: {
+    handleInput: {
         value: function (event) {
+            console.log("handleInput() details: ", event.details);
+            event.preventDefault();
         }
     },
 
-    handleOwnerInput: {
+    handleInputButtonAction: {
         value: function (event) {
+            var details = {message: "Hi from handleInputButtonAction()"};
+            console.log("Dispatching \"input\" event with details: ", details);
+            this.dispatchEventNamed("input", true, true, details);
         }
     },
 
-    handleOwnerNotInput: {
+    handleNotInput: {
         value: function (event) {
+            console.log("handleNoInput() details: ", event.details);
+            event.preventDefault();
         }
     },
 
-    handleOwnerAction: {
+    handleNotInputButtonAction: {
         value: function (event) {
+            var details = {message: "Hi from handleNotInputButtonAction()"};
+            console.log("Dispatching \"notInput\" event with details: ", details);
+            this.dispatchEventNamed("notInput", true, true, details);
         }
     }
 
