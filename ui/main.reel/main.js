@@ -28,6 +28,11 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     handleOwnerNotInput: {
         value: function (event) {
         }
+    },
+
+    handleOwnerAction: {
+        value: function (event) {
+        }
     }
 
 });
