@@ -8,8 +8,21 @@
         "owner": {
             "properties": {
                 "element": {"#": "owner"}
+            },
+        "listeners": [
+            {
+                "type": "action",
+                "listener": {"@": "owner"}
+            },
+            {
+                "type": "input",
+                "listener": {"@": "owner"}
+            },
+            {
+                "type": "notInput",
+                "listener": {"@": "owner"}
             }
-        }
+            ]
     }
     </script>
 </head>
