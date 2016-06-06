@@ -16,33 +16,23 @@
                 "draggable": "true"
             },
             "listeners": [
-                {
-                    "type": "action",
-                    "useCapture": false,
-                    "listener": {"@": "owner"}
-                }
+                {"type": "action", "listener": {"@": "owner"}}
+                {"type": "input", "listener": {"@": "owner"}},
+                {"type": "notInput", "listener": {"@": "owner"}},
             ]
         },
-        "button": {
+        "inputEventButton": {
             "prototype": "montage/ui/button.reel",
             "properties": {
-                "element": {"#": "button"},
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true",
-                "enabled": true,
-                "formenctype": "application/x-www-form-urlencoded",
-                "formmethod": "get",
-                "label": "Button",
-                "type": "button"
+                "element": {"#": "inputEventButton"},
+                "label": "Generate \"input\" Event"
             }
         },
-        "button2": {
+        "notInputEventButton": {
             "prototype": "montage/ui/button.reel",
             "properties": {
-                "element": {"#": "button2"},
-                "enabled": true,
-                "label": "Button"
+                "element": {"#": "notInputEventButton"},
+                "label": "Generate \"notInput\" Event"
             }
         }
     }
@@ -50,8 +40,8 @@
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <button data-montage-id="button"></button>
-        <button data-montage-id="button2"></button>
+        <button data-montage-id="inputEventButton"></button>
+        <button data-montage-id="notInputEventButton"></button>
     </div>
 </body>
 </html>
