@@ -6,6 +6,20 @@ exports.Inside = Component.specialize(/** @lends Inside# */ {
         value: function Inside() {}
     },
 
+    _input: {
+        set: function (input) {
+            this.addEventListener("input", this, false);
+        }
+    },
+
+    handleInput: {
+        value: function (event) {
+            var detail = {message: "Hi from handleInputEvent1ButtonAction()"};
+            console.log("Handled \"input\" event with detail: ", detail);
+            this.dispatchEventNamed("input", true, true, detail);
+        }
+    },
+
     handleInputEvent1ButtonAction: {
         value: function (event) {
             var detail = {message: "Hi from handleInputEvent1ButtonAction()"};

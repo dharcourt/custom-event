@@ -15,14 +15,14 @@ exports.Main = Component.specialize(/** @lends Main# */ {
 
     handleInput: {
         value: function (event) {
-            console.log("handleInput() detail: ", event.detail);
+            console.log("Handling \"input\" event with detail: ", event.detail);
             event.preventDefault();
         }
     },
 
     handleNotInput: {
         value: function (event) {
-            console.log("handleNoInput() details: ", event.detail);
+            console.log("Handling \"notInput\" event with detail: ", event.detail);
             event.preventDefault();
         }
     }
