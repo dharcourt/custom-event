@@ -4,7 +4,7 @@ exports.Inside = Component.specialize(/** @lends Inside# */ {
 
     constructor: {
         value: function Inside() {}
-    }
+    },
 
     handleInputEventButtonAction: {
         value: function (event) {
