@@ -16,10 +16,33 @@
                 "draggable": "true"
             },
             "listeners": [
-                {"type": "action", "listener": {"@": "owner"}}
-                {"type": "input", "listener": {"@": "owner"}},
-                {"type": "notInput", "listener": {"@": "owner"}}
+                {
+                    "type": "action",
+                    "listener": {"@": "owner"}
+                },
+                {
+                    "type": "input",
+                    "listener": {"@": "owner"}
+                },
+                {
+                    "type": "notInput",
+                    "listener": {"@": "owner"}
+                }
             ]
+        },
+        "button": {
+            "prototype": "montage/ui/button.reel",
+            "properties": {
+                "element": {"#": "button"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "enabled": true,
+                "formenctype": "application/x-www-form-urlencoded",
+                "formmethod": "get",
+                "label": "Button",
+                "type": "button"
+            }
         },
         "inputEventButton": {
             "prototype": "montage/ui/button.reel",
@@ -42,6 +65,7 @@
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <button data-montage-id="inputEventButton"></button>
         <button data-montage-id="notInputEventButton"></button>
+        <button data-montage-id="button"></button>
     </div>
 </body>
 </html>
