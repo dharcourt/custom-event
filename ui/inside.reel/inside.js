@@ -14,9 +14,8 @@ exports.Inside = Component.specialize(/** @lends Inside# */ {
 
     handleInput: {
         value: function (event) {
-            var detail = {message: "Hi from handleInputEvent1ButtonAction()"};
-            console.log("Handled \"input\" event with detail: ", detail);
-            this.dispatchEventNamed("input", true, true, detail);
+            console.log("Handling \"input\" event with detail: ", event.detail);
+            event.preventDefault();
         }
     },
 
