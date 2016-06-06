@@ -22,7 +22,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         }
     },
 
-    handleInputButtonAction: {
+    handleInputEventButtonAction: {
         value: function (event) {
             var details = {message: "Hi from handleInputButtonAction()"};
             console.log("Dispatching \"input\" event with details: ", details);
@@ -37,7 +37,7 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         }
     },
 
-    handleNotInputButtonAction: {
+    handleNotInputEventButtonAction: {
         value: function (event) {
             var details = {message: "Hi from handleNotInputButtonAction()"};
             console.log("Dispatching \"notInput\" event with details: ", details);
