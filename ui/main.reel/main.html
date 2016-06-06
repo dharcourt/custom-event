@@ -10,16 +10,9 @@
     {
         "owner": {
             "properties": {
-                "element": {"#": "main"},
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true"
+                "element": {"#": "main"}
             },
             "listeners": [
-                {
-                    "type": "action",
-                    "listener": {"@": "owner"}
-                },
                 {
                     "type": "input",
                     "listener": {"@": "owner"}
@@ -29,34 +22,6 @@
                     "listener": {"@": "owner"}
                 }
             ]
-        },
-        "inputEventButton": {
-            "prototype": "montage/ui/button.reel",
-            "properties": {
-                "element": {"#": "inputEventButton"},
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true",
-                "enabled": true,
-                "formenctype": "application/x-www-form-urlencoded",
-                "formmethod": "get",
-                "label": "Generate \"input\" Event",
-                "type": "button"
-            }
-        },
-        "notInputEventButton": {
-            "prototype": "montage/ui/button.reel",
-            "properties": {
-                "element": {"#": "notInputEventButton"},
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true",
-                "enabled": true,
-                "formenctype": "application/x-www-form-urlencoded",
-                "formmethod": "get",
-                "label": "Generate \"notInput\" Event",
-                "type": "button"
-            }
         }
     }
     </script>
