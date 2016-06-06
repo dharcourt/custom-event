@@ -23,11 +23,18 @@
                 "label": "Generate \"input\" Event"
             }
         },
-        "notInputEventButton": {
+        "notInputEvent1Button": {
             "prototype": "montage/ui/button.reel",
             "properties": {
-                "element": {"#": "notInputEventButton"},
-                "label": "Generate \"notInput\" Event"
+                "element": {"#": "notInputEvent1Button"},
+                "label": "Generate \"notInput\" Event 1"
+            }
+        },
+        "notInputEvent2Button": {
+            "prototype": "montage/ui/button.reel",
+            "properties": {
+                "element": {"#": "notInputEvent2Button"},
+                "label": "Generate \"notInput\" Event 2"
             }
         }
     }
@@ -36,7 +43,8 @@
 <body>
     <div data-montage-id="owner" class="Inside">
         <button data-montage-id="inputEventButton"></button>
-        <button data-montage-id="notInputEventButton"></button>
+        <button data-montage-id="notInputEvent1Button"></button>
+        <button data-montage-id="notInputEvent2Button"></button>
     </div>
 </body>
 </html>
