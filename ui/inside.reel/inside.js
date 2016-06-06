@@ -7,8 +7,12 @@ exports.Inside = Component.specialize(/** @lends Inside# */ {
     },
 
     _input: {
+        get: function () {
+            return this.__input;
+        },
         set: function (input) {
-            this.addEventListener("input", this, false);
+            this.__input = input;
+            this.__input.addEventListener("input", this, false);
         }
     },
 
