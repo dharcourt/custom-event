@@ -17,31 +17,31 @@ exports.Main = Component.specialize(/** @lends Main# */ {
 
     handleInput: {
         value: function (event) {
-            console.log("handleInput() details: ", event.details);
+            console.log("handleInput() detail: ", event.detail);
             event.preventDefault();
         }
     },
 
     handleInputEventButtonAction: {
         value: function (event) {
-            var details = {message: "Hi from handleInputButtonAction()"};
-            console.log("Dispatching \"input\" event with details: ", details);
-            this.dispatchEventNamed("input", true, true, details);
+            var detail = {message: "Hi from handleInputButtonAction()"};
+            console.log("Dispatching \"input\" event with detail: ", detail);
+            this.dispatchEventNamed("input", true, true, detail);
         }
     },
 
     handleNotInput: {
         value: function (event) {
-            console.log("handleNoInput() details: ", event.details);
+            console.log("handleNoInput() details: ", event.detail);
             event.preventDefault();
         }
     },
 
     handleNotInputEventButtonAction: {
         value: function (event) {
-            var details = {message: "Hi from handleNotInputButtonAction()"};
-            console.log("Dispatching \"notInput\" event with details: ", details);
-            this.dispatchEventNamed("notInput", true, true, details);
+            var detail = {message: "Hi from handleNotInputButtonAction()"};
+            console.log("Dispatching \"notInput\" event with details: ", detail);
+            this.dispatchEventNamed("notInput", true, true, detail);
         }
     }
 
